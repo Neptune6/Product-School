@@ -1,0 +1,44 @@
+/*Author: Bryon, this file is to show all the styles for the Hobbies page*/
+
+ul{
+    
+    list-style-type: none;/*This is to remove the bullet points*/
+    display: flex;
+    flex-wrap:wrap;
+    padding-left: 0px
+ }
+ 
+li{
+    width: 32%;/*Liquid propterties. Using % will adapt to any screen. better to get 3 hobbies on the top vs using pixles*/
+    height: 100px;
+    line-height: 95px;
+    border: 3px solid  #aed6f1;
+    text-align: center;
+    background: blue;
+}
+
+/*The background colors of each hobby box*/
+li:nth-child(1){
+    background-color: lightblue;
+}
+li:nth-child(2){
+    background-color: lightgreen;
+}
+li:nth-child(3){
+    background-color: orange;
+}
+li:nth-child(4){
+    background-color: yellow;
+}
+li:nth-child(5){
+    background-color: pink;
+}
+li:nth-child(6){
+    background-color: magenta;
+}
+
+/*When hovering over, the text changes color*/
+li:hover {
+    background-color: black;
+    color:white;
+}
