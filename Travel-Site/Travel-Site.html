@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>A site by Bryon Pass</title>
+	<meta name="description" content="A site by Bryon Pass, about Bryon Pass">
+	<meta name="author" content="Bryon Pass">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript, Bryon Pass">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--reference to style sheet (CSS)-->
+	<link rel="stylesheet" href="Travel-Index.css" type="text/css" />
+	<style> .mySlides {display:none;} </style>
+	</head>
+
+	<Body>
+    Travel Slideshow
+
+    <div class="slideshow-container">
+      <img class="mySlides" src="Images/HongKong.jpg" style="width:65%">
+      <img class="mySlides" src="Images/Singapore.jpg" style="width:65%">
+      <img class="mySlides" src="Images/Mexico_City.jpg" style="width:65%">
+      
+      <button class="left button" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="right button" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    <div id = "smallerimages">
+    <ul>
+  
+		<li>
+		    <a href="#openModal1">Toronto</a> <!--link-->
+		    <div>
+		    	<img src="Images/Toronto.jpg"></img>
+		    </div>
+		    
+		    <div id="openModal1" class="modalDialog">
+				<div>
+				    <a href="#close" title="Close" class="close">X</a>
+				    <h2>Toronto</h2>
+				    <p>Toronto, the capital of the province of Ontario, is a major Canadian city along Lake Ontario’s northwestern shore. It's a dynamic metropolis with a core of soaring skyscrapers, all dwarfed by the iconic, free-standing CN Tower. 
+				    Toronto also has many green spaces, from the orderly oval of Queen’s Park to 400-acre High Park and its trails, sports facilities and zoo.
+				    </p>
+				    
+				</div>
+				</div>
+		</li>
+		<li>
+				<a href="#openModal2">Tokyo</a> <!--link-->
+		    <div>
+		    	<img src="Images/Tokyo.jpg"></img>
+		    </div>
+		    
+			  <div id="openModal2" class="modalDialog">
+				<div>
+				    <a href="#close" title="Close" class="close">X</a>
+				    <h2>Tokyo</h2>
+				    <p>Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. 
+				    The Imperial Palace sits amid large public gardens. The city's many museums offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki theater (in the Edo-Tokyo Museum).
+				    </p>
+				 </div>
+				 </div>
+		</li>
+		<li>
+		    Shanghai
+		    <div>
+		    	<img src="Images/Shanghai.jpg"></img>
+		    </div>
+		</li>
+		<li>
+		    Chicago
+		    <div>
+		    	<img src="Images/Chicago.jpg"></img>
+		    </div>
+		</li>
+		<li>
+		    Vancouver
+		    <div>
+		    	<img src="Images/Vancouver.jpg"></img>
+		    </div>
+		</li>
+		<li>
+		    Seoul
+		    <div>
+		    	<img src="Images/Seoul.jpg"></img>
+		    </div>
+		</li>
+	</ul>  
+  </div>
+  <!--
+   http://jsfiddle.net/3Vykc/
+  -->
+  
+	</Body>
+</html>

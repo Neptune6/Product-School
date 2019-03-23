@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>A site by Bryon Pass</title>
+	<meta name="description" content="A site by Bryon Pass, about Bryon Pass">
+	<meta name="author" content="Bryon Pass">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript, Bryon Pass">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--reference to style sheet (CSS)-->
+	<link rel="stylesheet" href="index.css" type="text/css" />
+	
+
+	</head>
+	
+	<Body>
+	<h1 style="color:Tomato;">About Me</h1>
+
+	<img alt="This is an image of Bryon" src="BP.jpg"></img>
+	<p> Hello, everyone. I'm a technology consultant from Chicago, IL</p> 
+	
+	 <!--Weather-->
+	 <h1>Enter City Here</h1>
+        
+     <input id= "SearchInput" type="text" name="Search"/>
+     <button id="SearchButton" type="button">Search</button>
+    
+     <div id="content">Content Goes Here</div>
+    
+     <script type="text/javascript" src="hello-world.js"> //referencing seperate JS file
+     
+     </script>
+	
+	
+	
+	
+	
+	
+	<h2>
+	<a target="_blank" href="Hobbies.html"> My Hobbies</a>
+	</h2>
+
+	<h2 style ="background:black">Projects</h2>
+	
+	<ul>
+		<li>travel</li>
+		<li>try new food</li>
+		<li>read, listen to podcasts</li> 
+		<li>and exercise</li>
+	</ul>
+
+<!--This is navigation of the website -->
+<nav>
+	<a target="_blank" href="https://www.neptune6.com">Click here to learn about me</a>
+	<a target="_blank" href="https://www.linkedin.com/in/bryonpass/"> | My LinkedIn</a>
+	<a target="_blank" href="contact.html"> Contact</a>
+	<a target="_blank" href="Movies.html"> Search Movies</a>
+</nav>
+	
+	<button id="changeColorButton">Click to Change Color</button>
+	
+	<footer>Copyright 2019 @ Bryon</footer>
+	<script>
+	/*document is used to access the DOM. Document is a variable that contains all of your content.we replaced the innerHTML with text
+		document.body.innerHTML = "This website is under development";*/
+		document.getElementById('changeColorButton').onclick = function(){
+					
+					//if the page color is black, turn it to white
+					if (document.body.style.backgroundColor ==='black') {
+					   document.body.style.backgroundColor ='white';
+					} else {
+					//if page color is not black, turn it to black
+						document.body.style.backgroundColor='black';
+					}
+		};
+		
+	</script>
+	
+	</Body>
+	
+</html>

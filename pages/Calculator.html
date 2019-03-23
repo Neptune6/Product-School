@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="calculator.css" type="text/css" />
+    </head>
+    
+    <body>
+             <h3>Enter Two Numbers and Choose an Action to be Performed.</h3>
+
+        <div>
+          <input id="inputOne"/>
+          <input id="inputTwo"/>
+          
+          <input type="button" value="Add" id="add"/>
+          <input type="button" value="Subtract" id="subtract"/>
+          <input type="button" value="Divide" id="divide"/>
+          <input type="button" value="Multiply" id="multiply"/>
+        </div><br>
+        
+        <div id="result"> Result</div>
+        
+        <script>
+            var numOne = document.getElementById("inputOne");
+            var numTwo = document.getElementById("inputTwo");
+            var answer = document.getElementById("result");
+            
+            var addButton = document.getElementById("add");
+            var subtractButton = document.getElementById("subtract");
+            var divideButton = document.getElementById("divide");
+            var multiplyButton = document.getElementById("multiply");
+            
+            //element.addEventListener(event, function, useCapture);
+            //The first parameter is the type of the event (like "click" or "mousedown") 
+            //The second parameter is the function we want to call when the event occurs
+           
+            addButton.addEventListener("click", add);
+            subtractButton.addEventListener("click", subtract);
+            divideButton.addEventListener("click", divide);
+            multiplyButton.addEventListener("click", multiply);
+            
+            function add(){
+              var one = parseFloat(numOne.value) || 0;
+              var two = parseFloat(numTwo.value) || 0;
+              
+              answer.innerHTML = "Answer: " + (one+two);
+            }
+            
+            function subtract(){
+              var one = parseFloat(numOne.value) || 0;
+              var two = parseFloat(numTwo.value) || 0;
+              
+              answer.innerHTML = "Answer: " + (one-two);
+            }
+            
+            function divide(){
+              var one = parseFloat(numOne.value) || 0;
+              var two = parseFloat(numTwo.value) || 0;
+              
+              answer.innerHTML = "Answer: " + (one/two);
+            }
+            
+            function multiply(){
+              var one = parseFloat(numOne.value) || 0;
+              var two = parseFloat(numTwo.value) || 0;
+              
+              answer.innerHTML = "Answer: " + (one*two);
+            }
+            
+        </script>
+        
+        
+        
+    </body>
+</html>

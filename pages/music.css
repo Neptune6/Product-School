@@ -1,0 +1,41 @@
+/*Author: Bryon, this file is to show all the styles for the Music page*/
+
+
+body{
+    border: 5px solid #42f4ce; /*this is the border*/
+    border-radius: 2px;/*rounded borders*/
+    padding-left: 10px;
+}
+
+h1{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+div{/*applies to the div containers*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img{/*This applies to all images and makes them a consistent width and height*/
+    width: 75px;
+    height: 75px;
+    display: block;
+
+}
+
+ol{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40px;
+}
+
+li{
+
+    width: 50%;
+}
+
+a{ /*applies to all anchor links*/
+    color: black;
+    text-decoration: none;
+}
